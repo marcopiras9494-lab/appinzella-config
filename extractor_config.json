@@ -1,18 +1,9 @@
 {
-  "name": "Catalogo aggiornato da GitHub Stream",
-  "baseUrl": "https://streamingcommunityz.rip/",
-  "search": {
-    "pagePathTemplate": "/catalogue/page-{page}.html",
-    "pagesToScan": 3,
-    "itemSelector": "article.product_pod",
-    "linkSelector": "h3 a",
-    "titleAttribute": "title",
-    "thumbnailSelector": "div.image_container img",
-    "subtitleSelector": "p.price_color"
-  },
-  "detail": {
-    "titleSelector": "h1",
-    "posterSelector": "#product_gallery img",
-    "descriptionSelector": "#product_description + p"
+  "type": "archive",
+  "name": "Internet Archive",
+  "baseUrl": "https://archive.org",
+  "archive": {
+    "query": "collection:(feature_films) AND mediatype:(movies)",
+    "rows": 30
   }
 }
