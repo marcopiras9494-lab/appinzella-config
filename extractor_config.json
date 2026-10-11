@@ -1,6 +1,6 @@
 {
-  "name": "Catalogo aggiornato da GitHub",
-  "baseUrl": "https://books.toscrape.com",
+  "name": "Catalogo aggiornato da GitHub Stream",
+  "baseUrl": "https://streamingcommunityz.rip/",
   "search": {
     "pagePathTemplate": "/catalogue/page-{page}.html",
     "pagesToScan": 3,
