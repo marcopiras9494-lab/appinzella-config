@@ -1,5 +1,5 @@
 {
-  "name": "Books to Scrape",
+  "name": "Catalogo aggiornato da GitHub",
   "baseUrl": "https://books.toscrape.com",
   "search": {
     "pagePathTemplate": "/catalogue/page-{page}.html",
