@@ -38,7 +38,7 @@
   "source": {
     "type": "archive",
     "name": "Internet Archive",
-    "baseUrl": "https://streamingcommunityz.rip",
+    "baseUrl": "https://archive.org",
     "rows": 20,
     "sort": "titleSorter asc",
 
