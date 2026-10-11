@@ -1,9 +1,77 @@
 {
-  "type": "archive",
-  "name": "Internet Archive",
-  "baseUrl": "https://archive.org",
-  "archive": {
-    "query": "collection:(feature_films) AND mediatype:(movies)",
-    "rows": 30
+  "tabs": [
+    { "id": "film", "label": "Film", "enabled": true },
+    { "id": "serie", "label": "Serie TV", "enabled": false }
+  ],
+
+  "filters": {
+    "categoria": [
+      { "id": "horror",       "label": "Horror" },
+      { "id": "fantascienza", "label": "Fantascienza" },
+      { "id": "western",      "label": "Western" },
+      { "id": "commedia",     "label": "Commedia" },
+      { "id": "drammatico",   "label": "Drammatico" },
+      { "id": "giallo",       "label": "Giallo/Noir" },
+      { "id": "avventura",    "label": "Avventura" },
+      { "id": "azione",       "label": "Azione" },
+      { "id": "romantico",    "label": "Romantico" },
+      { "id": "musical",      "label": "Musical" },
+      { "id": "animazione",   "label": "Animazione" },
+      { "id": "guerra",       "label": "Guerra" },
+      { "id": "muto",         "label": "Muto" },
+      { "id": "thriller",     "label": "Thriller" },
+      { "id": "documentario", "label": "Documentario" },
+      { "id": "crime",        "label": "Crime" }
+    ],
+    "anno": [
+      { "id": "a2020", "label": "2020 e oltre" },
+      { "id": "a2010", "label": "Anni 2010" },
+      { "id": "a2000", "label": "Anni 2000" },
+      { "id": "a1990", "label": "Anni '90" },
+      { "id": "a1980", "label": "Anni '80" },
+      { "id": "a1970", "label": "Anni '70" },
+      { "id": "a1960", "label": "Anni '60" },
+      { "id": "a1950", "label": "1959 e precedenti" }
+    ]
+  },
+
+  "source": {
+    "type": "archive",
+    "name": "Internet Archive",
+    "baseUrl": "https://archive.org",
+    "rows": 20,
+    "sort": "titleSorter asc",
+
+    "tabQueries": {
+      "film": "collection:(feature_films) AND mediatype:(movies)"
+    },
+
+    "filterQueries": {
+      "horror":       "subject:(horror)",
+      "fantascienza": "subject:(\"science fiction\")",
+      "western":      "subject:(western)",
+      "commedia":     "subject:(comedy)",
+      "drammatico":   "subject:(drama)",
+      "giallo":       "subject:(noir OR mystery)",
+      "avventura":    "subject:(adventure)",
+      "azione":       "subject:(action)",
+      "romantico":    "subject:(romance)",
+      "musical":      "subject:(musical)",
+      "animazione":   "subject:(animation OR cartoon)",
+      "guerra":       "subject:(war)",
+      "muto":         "subject:(\"silent film\")",
+      "thriller":     "subject:(thriller)",
+      "documentario": "subject:(documentary)",
+      "crime":        "subject:(crime)",
+
+      "a2020": "year:[2020 TO 2099]",
+      "a2010": "year:[2010 TO 2019]",
+      "a2000": "year:[2000 TO 2009]",
+      "a1990": "year:[1990 TO 1999]",
+      "a1980": "year:[1980 TO 1989]",
+      "a1970": "year:[1970 TO 1979]",
+      "a1960": "year:[1960 TO 1969]",
+      "a1950": "year:[* TO 1959]"
+    }
   }
 }
