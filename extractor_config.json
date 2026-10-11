@@ -1,0 +1,18 @@
+{
+  "name": "Books to Scrape",
+  "baseUrl": "https://books.toscrape.com",
+  "search": {
+    "pagePathTemplate": "/catalogue/page-{page}.html",
+    "pagesToScan": 3,
+    "itemSelector": "article.product_pod",
+    "linkSelector": "h3 a",
+    "titleAttribute": "title",
+    "thumbnailSelector": "div.image_container img",
+    "subtitleSelector": "p.price_color"
+  },
+  "detail": {
+    "titleSelector": "h1",
+    "posterSelector": "#product_gallery img",
+    "descriptionSelector": "#product_description + p"
+  }
+}
