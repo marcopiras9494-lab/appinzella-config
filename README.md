@@ -1,0 +1,1 @@
+# appinzella-config
